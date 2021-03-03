@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffef2;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Suisse Regular", sans-serif;
+  font-size: 14px;
+}
+/********************************** Message Icon***********************************/
+#messageIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fffef2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 5;
+  border: 1px solid black;
+}
+/********************************** Header Start***********************************/
+header {
+  height: 43px;
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  padding: 12px;
+  font-family: "Suisse Regular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-decoration: none solid rgb(255, 254, 242);
+  white-space: normal;
+  word-spacing: 0px;
+}
+
+#header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    background-color: #fffef2;
+  }
+  #header-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #header-div span {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  #header-div:hover {
+    cursor: pointer;
+  }
+  #header-div span {
+    transition: all ease 2s;
+  }
+  #header-div span:hover {
+    border-bottom: 1px solid white;
+  }
+}
+
+/********************************** Header End***********************************/
+
+/********************************** Nav Bar Start***********************************/
+
+.nav-bar {
+  background-color: #c5caca;
+  width: 100%;
+  height: 10%;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.nav-bar span {
+  margin-top: 2%;
+  padding: 1em;
+}
+.nav-bar span a {
+  position: relative;
+  cursor: pointer;
+}
+.nav-bar span a::after {
+  background: pink;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease;
+}
+.nav-bar span a:hover::after {
+  border-bottom: 1px solid black;
+  transform: scale(1, 1);
+  cursor: pointer;
+}
+
+/********************************** Nav Bar End***********************************/
+
+/* Top */
+
+#top {
+  height: 70%;
+  width: 100%;
+  background-image: url("bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btnn {
+  cursor: pointer;
+  border: 1px solid grey;
+  background-color: transparent;
+  height: 60px;
+  width: 300px;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  padding-left: 20px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.btnn:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#heading_text {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+#heading_text span {
+  font-size: 2px;
+}
+.heading_text {
+  display: inline;
+}
+
+.top-sec1 {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.top-sec2 {
+  margin-top: 6.5%;
+}
+
+.top-sec2 h2 {
+  font-size: 1em;
+}
+
+.top-sec2 h1 {
+  line-height: 39.9px;
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5%;
+}
+.top-sec2 p {
+  margin-bottom: 8%;
+}
+
+/********************************** Two Products section ***********************************/
+#twoProducts {
+  height: 80vh;
+  width: 100vw;
+  text-align: center;
+}
+#firstProd {
+  height: 80vh;
+  /* width: 50vw; */
+  background-image: url("./prod1.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#secondProd {
+  height: 80vh;
+  /* width: 50vw; */
+  background-image: url("./prod2.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#twoProducts h1 {
+  margin-top: 20%;
+  font-family: "Zapf Humanist", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 39.9px;
+  text-decoration: none solid rgb(255, 254, 242);
+}
+
+#twoProducts h2 {
+  font-family: "Suisse Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 25.6px;
+  text-decoration: none solid rgb(255, 254, 242);
+  text-align: center;
+}
+/********************************** End of Two Products section ***********************************/
+
+/********************************** Quote section ***********************************/
+
+#quote {
+  background-color: #fffef2;
+  color: #333333;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+#quote h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+#quote p {
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+/********************************** End of Quote Section ***********************************/
+
+/********************************** Section of image and quote products ***********************************/
+#imgAndQoute {
+  padding: 7% 0;
+  background-color: #fffef2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#imgAndQoute h1 {
+  font-family: "Zapf Humanist", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: normal;
+  line-height: 39.9px;
+  text-decoration: none solid rgb(51, 51, 51);
+  text-align: start;
+  text-indent: 0px;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-spacing: 0px;
+  margin: 0px 0px 30px;
+}
+
+#imgAndQoute p {
+  font-family: "Suisse Regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-decoration: none solid rgb(51, 51, 51);
+  word-spacing: 0px;
+}
+
+#imgAndQoute img {
+  /* background-image: url("./bar1.jpg"); */
+  height: 50vh;
+  width: 50vw;
+  /* padding-left: 15%; */
+  padding-top: 2%;
+}
+@media (max-width: 992px) {
+  #imgAndQoute p {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10%;
+  }
+
+  #imgAndQoute img {
+    /* background-image: url("./bar1.jpg"); */
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20%;
+    padding-left: 0%;
+  }
+}
+
+/********************************** End ofSection of image and quote products ***********************************/
+
+/********************************** Section of image and Carousel products ***********************************/
+#imgAndCarousel {
+  padding: 7% 0;
+  background-color: #fffef2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#imgAndCarousel h1 {
+  font-family: "Zapf Humanist", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: normal;
+  line-height: 39.9px;
+  text-decoration: none solid rgb(51, 51, 51);
+  text-align: start;
+  text-indent: 0px;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-spacing: 0px;
+  margin: 0px 0px 30px;
+}
+
+#imgAndCarousel p {
+  font-family: "Suisse Regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-decoration: none solid rgb(51, 51, 51);
+  word-spacing: 0px;
+}
+
+#imgAndCarousel img {
+  /* background-image: url("./bar1.jpg"); */
+  height: 50vh;
+  width: 50vw;
+  /* padding-left: 15%; */
+  padding-top: 2%;
+}
+@media (max-width: 992px) {
+  #imgAndCarousel p {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10%;
+  }
+
+  #imgAndCarousels img {
+    /* background-image: url("./bar1.jpg"); */
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20%;
+    padding-left: 0%;
+  }
+  #carouselExampleIndicators {
+    padding-top: 20%;
+  }
+  .btnn {
+    margin-top: 2%;
+  }
+  .btnn:hover {
+    background-color: #333333;
+    color: #efefef;
+  }
+}
+
+/********************************** End ofSection of image and Carousel products ***********************************/
+
+/********************************** Footer ***********************************/
+#footer {
+  padding: 4em;
+  background-color: #252525;
+  color: rgb(255, 254, 242);
+  border-bottom: 3px solid #fffef2;
+}
+
+.footer-input {
+  border: 1px solid #fffef2;
+  border-radius: 3px;
+  background-color: #252525;
+  width: 100%;
+  color: #fffef2;
+  outline: none;
+  padding: 1%;
+}
+
+.Input {
+  position: relative;
+}
+#arrow {
+  position: absolute;
+  left: 90%;
+  top: 3.5%;
+}
+
+#footer p {
+  padding: 1% 5% 1% 0;
+}
+
+.list-heading {
+  font-size: 1.2em;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #fffef2;
+}
+.list {
+  font-size: 1em;
+  font-weight: lighter;
+  padding: 2%;
+  padding-left: 0;
+}
+.list li {
+  padding-top: 2%;
+}
+
+.footer-copyright {
+  padding-top: 2%;
+  /* border-top: 3px solid #fffef2; */
+}
+@media only screen and (max-width: 1100px) {
+  .Hide {
+    display: none;
+  }
+}
+
+/********************************** Footer End***********************************/
+
+/********************************** Section of image and Carousel products ***********************************/
+#carouselOfCard {
+  margin-top: 10%;
+}
+#carouselOfCard .DivOfImg {
+  height: 400px;
+  width: 362px;
+  background-color: #fffef2;
+}
+#carouselOfCard h5 {
+  font-size: 1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 23.8px;
+  text-decoration: underline solid rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+#carouselOfCard p {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: normal;
+  line-height: 23.8px;
+  cursor: pointer;
+}
+/********************************** End of Section of image and Carousel products ***********************************/
