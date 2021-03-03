@@ -121,7 +121,7 @@ header {
 #top {
   height: 70%;
   width: 100%;
-  background-image: url("bg1.jpg");
+  background-image: url("./images/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +193,7 @@ header {
 #firstProd {
   height: 80vh;
   /* width: 50vw; */
-  background-image: url("./prod1.jpeg");
+  background-image: url("./images/prod1.jpeg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -201,7 +201,7 @@ header {
 #secondProd {
   height: 80vh;
   /* width: 50vw; */
-  background-image: url("./prod2.jpeg");
+  background-image: url("./images/prod2.jpeg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
